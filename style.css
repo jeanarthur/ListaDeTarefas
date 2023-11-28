@@ -1,0 +1,72 @@
+body {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.task {
+    background-color: whitesmoke;
+}
+
+button, input {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+header > h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    margin: 1%;
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+#taskList > div, .taskInput {
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+}
+
+.taskInput {
+    background-color: whitesmoke;
+}
+
+.taskInput:hover {
+    background-color: beige;
+}
+
+#taskList > div:hover {
+    background-color: beige;
+}
+
+#taskList > div > input, .taskInput > input {
+    width: 100%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.pending, .pending > * {
+    border-radius: 5px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.done, .done > * {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgreen;
+    border-radius: 5px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
